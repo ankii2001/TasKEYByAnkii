@@ -1,58 +1,89 @@
 * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    font-family: "Poppins", sans-serif !important;
-    background-color: #ebf2ff;
-  }
-  
-  p {
-    font-family: "Poppins", sans-serif !important;
-  }
-  
-  .trim-3-lines {
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-  }
-  
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  background-color: #ebf2ff;
+}
+
+.nav-link {
+  color: grey;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(74, 72, 72, 0.1);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+}
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.32875rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+  border-radius: 1.078em;
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(74, 72, 72, 0.1);
+}
+
+p {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.trim-3-lines {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.add__new__btn__modile__only {
+  position: fixed;
+  bottom: 0 !important;
+  right: 0 !important;
+  left: 0 !important;
+  padding: 15px 10px;
+  background: white;
+  z-index: 3;
+}
+.place__holder__image {
+  height: 200px;
+  width: 100%;
+}
+.task__card {
+  cursor: pointer;
+}
+
+.task__card:hover {
+  border: 1px solid #4582ec;
+}
+
+.task__card:hover .task__card__title {
+  color: #4582ec;
+}
+
+.task__card:hover .task__card__header {
+  border-bottom: 1px solid #4582ec;
+}
+.task__card:hover .task__card__footer {
+  border-top: 1px solid #4582ec;
+}
+
+@media (min-width: 768px) {
   .add__new__btn__modile__only {
-    position: fixed;
-    bottom: 0 !important;
-    right: 0 !important;
-    left: 0 !important;
-    padding: 15px 10px;
-    background: white;
-    z-index: 3;
+    display: none;
   }
-  .place__holder__image {
-    height: 200px;
-    width: 100%;
-  }
-  .task__card {
-    cursor: pointer;
-  }
-  
-  .task__card:hover {
-    border: 1px solid #4582ec;
-  }
-  
-  .task__card:hover .task__card__title {
-    color: #4582ec;
-  }
-  
-  .task__card:hover .task__card__header {
-    border-bottom: 1px solid #4582ec;
-  }
-  .task__card:hover .task__card__footer {
-    border-top: 1px solid #4582ec;
-  }
-  
-  @media (min-width: 768px) {
-    .add__new__btn__modile__only {
-      display: none;
-    }
-  }
+  .collapse navbar-collapse{
+    color: grey;
+}
+    
+
+      
